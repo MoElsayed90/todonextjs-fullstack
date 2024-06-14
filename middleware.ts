@@ -12,7 +12,7 @@ export default clerkMiddleware((auth, req) => {
 
     return auth().redirectToSignIn();
   }
-});
+},{ debug: true });
 export const config = {
   matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
 };
